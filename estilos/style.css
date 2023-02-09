@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/*
-    Paleta de cores
-
-*/
 
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -24,30 +20,115 @@ main{
 }
 
 section#login{
-    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
-
     background-color: white;
     width: 280px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
 
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 section#login > div#imagem{
     display: block;
     background: #5d8c8c url(../imagens/tela.jpg) no-repeat;
     background-size: cover;
+    background-position: bottom left;
     height: 200px;
 }
 section#login > div#formulario{
     display: block;
     padding: 10px;
     text-align: justify;
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.9em;
+}
+
+form > div.campo{
+    background-color: #5D8C8C;
+    border: 2px solid #5D8C8C;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+}
+div.campo > span{
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input {
+    background-color: #CAFAFE;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 15px;
+    margin-left: 45px;
+    transform: translateY(-42px);
+}
+div.campo > input:focus-within{
+    background-color: white;
+}
+
+input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #385956;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-top: 5px;
+}
+
+input[type=submit]:hover {
+    background-color: #5D8C8C;
+    color: white;
+}
+
+a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #385956;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a.botao > span {
+    font-size: 1em;
+    color: white;
+    padding: 5px;
+}
+a.botao:hover{
+    background-color: #5D8C8C;
+    color: black;
 }
